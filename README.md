@@ -1,6 +1,6 @@
 # Awesome-Collaborative-Word-Processor
 
-# Top Collaborative Word Processor Ecosystem
+## Top Collaborative Word Processor Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Real-Time Co-Editing, Document Collaboration & Cloud-Native Writing*  
