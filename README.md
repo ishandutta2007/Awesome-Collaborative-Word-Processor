@@ -1,73 +1,98 @@
-# Awesome-Collaborative-Word-Processor
+# Awesome Collaborative Word Processor [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-## Top Collaborative Word Processor Ecosystem
+> A curated list of top SaaS products and open-source collaborative word processors, real-time document editors, and co-authoring suites.
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on Real-Time Co-Editing, Document Collaboration & Cloud-Native Writing*  
-**Last updated: March 2026**
+This repository tracks notable **SaaS platforms** and **open-source projects** for **Collaborative Word Processors**. These tools enable teams and distributed workforces to write, edit, review, and format documents together in real time—covering rich text formatting, suggestion mode, inline comments, version histories, CRDT/OT co-editing, and AI-assisted drafting.
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Collaborative Word Processors**. These tools enable teams to write, edit, and review documents together in real time—covering rich text editing, suggestion mode, comment threads, version history, and AI-assisted drafting that eliminates the friction of emailing documents back and forth.
-
-**Examples** include Google Docs, Microsoft Word Online, Zoho Writer, Notion, Quip, Dropbox Paper, OnlyOffice Document Editor, Coda, Slite, and Apple Pages iCloud (the category leaders).
-
-**Open-source emphasis**: This section highlights every major active project for self-hosted collaborative editors, open-source document suites, and community-driven writing platforms—ideal for organizations seeking data sovereignty, offline capability, and vendor neutrality over per-seat cloud subscriptions.
-
-Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-| Product | Description | Pricing (Starting) | Free Tier / Trial Limits |
-|---------|-------------|-------------------|--------------------------|
-| **[Google Docs](https://docs.google.com/)** | Browser-based word processor within Google Workspace. Real-time collaboration, suggestion mode, version history, and Gemini AI integration. Free for personal Google accounts with 15 GB shared storage . | Business Starter: $7/user/month (annual); Business Standard: $14 | **Free (personal Google account)**: full Docs editor, 15 GB shared Google Drive storage, collaboration features. **14-day trial** for Workspace Business plans |
-| **[Microsoft Word Online](https://www.microsoft.com/en-us/microsoft-365/word)** | Web version of Word with core editing, real-time co-authoring, and 5 GB OneDrive storage on the free tier . | Microsoft 365 Business Basic: $7/user/month (rising July 2026) | **Free**: Word web version, 5 GB OneDrive storage, basic templates, real-time collaboration. No time-limited trial for free tier |
-| **[Zoho Writer](https://www.zoho.com/writer/)** | Cloud word processor within Zoho Office Suite. Real-time collaboration, track changes, comments, and integration with Zoho ecosystem. Free for individuals . | Paid plans available via Zoho Workplace (Standard/Professional) | **Free for individuals**: full document editing, real-time collaboration, integration with Zoho apps |
-| **[Notion](https://www.notion.so/)** | All-in-one workspace with document editing embedded in pages and databases. Supports collaborative editing, comments, and AI writing assistance. Free plan includes unlimited pages for individuals and up to 10 guests . | Plus: ~$10/user/month; Business: ~$18/user/month (annual) | **Free**: unlimited pages for individuals, 10 guests, 5 MB file uploads, 7-day page history |
-| **[Quip](https://quip.com/)** | Salesforce-owned collaborative document and spreadsheet platform with embedded chat. Real-time editing with comments and @mentions. Starter plan includes unlimited documents . | Starter: $10/user/month (annual); Plus: $25; Advanced: $100 | **No free tier**; paid plans only. Special offer: $30 for first five users (Starter, annual) |
-| **[Dropbox Paper](https://www.dropbox.com/paper)** | Collaborative document tool integrated with Dropbox. Real-time editing, comments, and task assignment. Free for all Dropbox users . | Free with any Dropbox account; paid Dropbox plans for additional storage | **Free forever**: unlimited Paper documents with a Dropbox account |
-| **[OnlyOffice Document Editor](https://www.onlyoffice.com/)** | Docs, Sheets, Slides, and DocSpace collaboration platform. Cloud Startup plan is free for small teams; self-hosted editions available . | Cloud Startup: Free (3 admins, 12 rooms, 2 GB); Enterprise/Developer: quote-only | **Free (Startup)**: 3 admins, unlimited users/visitors, 12 rooms, 2 GB storage |
-| **[Coda](https://coda.io/)** | Document-platform hybrid with tables, buttons, and automations. Billed only for Doc Makers (creators); Editors and Viewers are free . | Pro: $10/month per Doc Maker; Team: $30/month per Doc Maker | **Free**: unlimited unshared docs, 1 GB per doc, 7-day version history |
-| **[Slite](https://slite.com/)** | Collaborative knowledge base and document editor with AI-powered search. Free plan available with limited documents and version history . | Paid plans available; free tier offered | **Free**: basic document editing, limited AI features, community support |
-| **[Apple Pages iCloud](https://www.icloud.com/)** | Web version of Apple Pages accessible via iCloud.com from any browser. Real-time collaboration, rich formatting, and export to DOCX/PDF . | **Free** with an Apple ID | **Free forever**: full Pages editor via iCloud.com, real-time collaboration, export options |
-
-## Open-Source GitHub Projects
-
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[LibreOffice Writer](https://github.com/LibreOffice/core)** | [![Stars](https://img.shields.io/github/stars/LibreOffice/core?style=social&color=white)](https://github.com/LibreOffice/core/stargazers) | The flagship open-source word processor from The Document Foundation. Native ODF plus solid DOCX compatibility. Runs fully offline with no account required and no telemetry. The desktop reference for free document editing . |
-| **[OnlyOffice Document Server](https://github.com/ONLYOFFICE/DocumentServer)** | [![Stars](https://img.shields.io/github/stars/ONLYOFFICE/DocumentServer?style=social&color=white)](https://github.com/ONLYOFFICE/DocumentServer/stargazers) | Self-hosted collaborative document editing server. Integrates with Nextcloud, ownCloud, SharePoint, and custom apps via API. Strong Microsoft format compatibility and real-time co-editing. AGPL for community edition . |
-| **[Etherpad](https://github.com/ether/etherpad)** | [![Stars](https://img.shields.io/github/stars/ether/etherpad?style=social&color=white)](https://github.com/ether/etherpad/stargazers) | Real-time collaborative text editor with a plugin ecosystem. Lightweight and embeddable; often used as a building block for custom document workflows. Self-hosted with no per-seat fees . |
-
-### Additional Strong Open-Source Options
-
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[CryptPad](https://github.com/cryptpad/cryptpad)** | [![Stars](https://img.shields.io/github/stars/cryptpad/cryptpad?style=social&color=white)](https://github.com/cryptpad/cryptpad/stargazers) | Privacy-first, end-to-end encrypted collaboration suite with rich text, sheets, slides, code, and kanban. Zero-knowledge architecture means the server cannot read document contents. Self-hostable . |
-| **[Nextcloud Office](https://github.com/nextcloud/richdocuments)** | [![Stars](https://img.shields.io/github/stars/nextcloud/richdocuments?style=social&color=white)](https://github.com/nextcloud/richdocuments/stargazers) | Nextcloud integration with Collabora Online or ONLYOFFICE, turning a self-hosted Nextcloud instance into a full productivity suite with file storage, sharing, and real-time document editing . |
-
-**Frameworks for building custom systems**: Combine **LibreOffice Writer** for offline authoring, **OnlyOffice Document Server** or **Collabora Online** for web-based real-time editing, and **Nextcloud** for file storage and sharing—deployable entirely on-premises or in a private cloud with Docker Compose.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Collaborative word processors handle potentially sensitive business and personal documents; review data processing terms and access controls before uploading confidential information.
-- Self-hosted open-source editors require proper backups, security updates, and collaborative editing server hardening; misconfigured document servers can expose sensitive files or allow unauthorized editing. Free tier limits and pricing change frequently—verify against vendor pages before committing.
+Whether you need enterprise-grade cloud productivity suites or self-hosted, privacy-first, open-source document servers for sovereign infrastructure, this guide covers the ecosystem.
 
 ---
 
-**Made for writers, editors, operations teams, and developers building document collaboration infrastructure.**  
-Let's make collaborative word processing more open, sovereign, and collaborative.
+## Table of Contents
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS/Hosted Platforms](#saashosted-platforms)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+- [Key Features to Compare](#key-features-to-compare)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer](#disclaimer)
+
+---
+
+## Sector Overview & Market Dynamics
+
+The global collaborative word processing and office productivity software market is estimated at **$35B–$45B+ USD**, compounding at approximately **11–13% CAGR** driven by remote-first workforces, real-time collaboration requirements, and embedded generative AI capabilities. 
+
+The industry exhibits a **highly concentrated, oligopolistic structure** at the general office suite layer—dominated by Microsoft (Microsoft 365) and Google (Google Workspace), who together control over 85% of market volume. However, the document layer features **moderate fragmentation in specialized niches**, where modern canvas/modular workspace platforms (Notion, Coda), privacy-first zero-knowledge suites (CryptPad), and open-source self-hosted solutions (ONLYOFFICE, AppFlowy, HedgeDoc) capture developers, technical teams, and privacy-conscious enterprises demanding vendor neutrality and data sovereignty.
+
+---
+
+## SaaS/Hosted Platforms
+
+*Ranked in descending order of parent company size (market capitalization / valuation).*
+
+| Product | Company Size (Valuation / Revenue) | Description | Starting Pricing | Free Tier / Trial Limits |
+|:---|:---|:---|:---|:---|
+| **[Apple Pages iCloud](https://www.icloud.com/)** | ~$3.5T Market Cap (~$391B Rev) | Web version of Apple Pages accessible via iCloud.com from any modern web browser. Features real-time co-authoring, advanced typography, media embedding, and seamless export to DOCX/PDF. | **Free** (Included with Apple ID) | **Free forever**: Full Pages cloud editor via iCloud.com with 5 GB free iCloud storage per Apple ID, unlimited shared documents. |
+| **[Microsoft Word Online](https://www.microsoft.com/en-us/microsoft-365/word)** | ~$3.1T Market Cap (~$245B Rev) | Web edition of Microsoft Word featuring core ribbon editing, real-time multi-user co-authoring, track changes, and cloud auto-saving. | **$6.00/user/month** (annual Microsoft 365 Business Basic) | **Free forever**: Word on the web with full real-time co-authoring and 5 GB OneDrive cloud storage. No credit card required. |
+| **[Google Docs](https://docs.google.com/)** | ~$2.1T Market Cap (~$350B Rev) | Pioneer browser-based collaborative word processor integrated with Google Drive and Google Workspace. Offers real-time multiplayer co-editing, suggestion mode, version history, and Gemini AI writing assistance. | **$6.00/user/month** (Google Workspace Business Starter, annual) | **Free forever**: Full Docs editor for personal Google accounts with 15 GB shared Google Drive storage. **14-day free trial** available for paid Google Workspace business plans. |
+| **[Quip](https://quip.com/)** | ~$280B Market Cap (Salesforce, ~$35B Rev) | Salesforce-owned collaborative document and spreadsheet platform with embedded team chat, inline comments, live Salesforce record updates, and task management. | **$10.00/user/month** (annual Quip Starter) | **30-day free trial** with full document and spreadsheet collaboration features for team evaluation. No permanent free plan. |
+| **[Dropbox Paper](https://www.dropbox.com/paper)** | ~$8B Market Cap (~$2.5B Rev) | Minimalist collaborative document workspace integrated with Dropbox cloud storage. Supports markdown, rich embeds, code blocks, task lists, and inline co-authoring. | **$9.99/month** (Dropbox Plus starting tier for extra cloud storage) | **Free forever**: Unlimited Paper documents and real-time collaboration with standard 2 GB Dropbox basic account. |
+| **[Notion](https://www.notion.so/)** | ~$10B Valuation ($250M+ ARR) | All-in-one connected workspace blending docs, wikis, and project management. Features real-time multi-user editing, block-based composition, and integrated Notion AI writing. | **$8.00/user/month** (annual Notion Plus) | **Free forever**: Unlimited pages and blocks for individuals, up to 10 guest collaborators, 5 MB file upload limit, and 7-day version history. |
+| **[Zoho Writer](https://www.zoho.com/writer/)** | ~$1B+ Revenue (Bootstrapped / Private) | Clean, cloud-based word processor within Zoho Workplace. Includes real-time co-authoring, granular review modes, digital signature workflows, and Zia AI writing assistance. | **$3.00/user/month** (annual Zoho Workplace Standard) | **Free forever**: Up to 5 GB storage and full-featured word processing for individuals. **15-day free trial** for Zoho Workplace team plans. |
+| **[Coda](https://coda.io/)** | ~$1.4B Valuation (Private) | Interactive doc platform combining document writing, relational spreadsheets, interactive buttons, and automated workflows. Uses Maker-only billing. | **$10.00/month per Doc Maker** (annual Coda Pro) | **Free forever**: Unlimited unshared docs, 1 GB storage per doc, up to 50 active doc size objects, and 7-day version history with unlimited free viewers/editors. |
+| **[OnlyOffice Document Editor](https://www.onlyoffice.com/)** | ~$20M+ Revenue (Ascensio System SIA, Private) | Highly compatible Office suite offering web-based document editing (DOCX, XLSX, PPTX). Available as hosted DocSpace cloud and self-hosted instances. | **$15.00/admin/month** (DocSpace Business cloud) | **Free forever (DocSpace Startup)**: Up to 3 admins, unlimited non-admin users, 12 collaboration rooms, and 2 GB cloud storage. **30-day free trial** for Business tier. |
+| **[Slite](https://slite.com/)** | Early-stage Venture (~$15M Raised) | Modern collaborative knowledge base and editor built for distributed teams, featuring Markdown support, discussion threads, and AI-powered team search. | **$8.00/user/month** (annual Slite Standard) | **Free forever**: Up to 50 documents, full editor features, and community support. **14-day free trial** on paid team plans. |
+
+---
+
+## Open-Source GitHub Projects
+
+*Ranked in descending order of GitHub stargazers.*
+
+| Project | Star Badge | Description |
+|:---|:---|:---|
+| **[AppFlowy](https://github.com/AppFlowy-IO/AppFlowy)** | [![Stars](https://img.shields.io/github/stars/AppFlowy-IO/AppFlowy?style=social&color=white)](https://github.com/AppFlowy-IO/AppFlowy/stargazers) | Open-source Flutter and Rust-based collaborative workspace and document editor. Privacy-first, local-first alternative to Notion with offline support and real-time syncing. |
+| **[AFFiNE](https://github.com/toeverything/AFFiNE)** | [![Stars](https://img.shields.io/github/stars/toeverything/AFFiNE?style=social&color=white)](https://github.com/toeverything/AFFiNE/stargazers) | Next-generation all-in-one collaborative knowledge base combining editable documents, infinite whiteboard canvas, and multimodal blocks. Built on CRDTs with local-first architecture. |
+| **[Outline](https://github.com/outline/outline)** | [![Stars](https://img.shields.io/github/stars/outline/outline?style=social&color=white)](https://github.com/outline/outline/stargazers) | Fast, beautiful, real-time collaborative team documentation and wiki tool built with Node.js and React. Supports Markdown, rich embeds, permissions, and file uploads. |
+| **[Tiptap](https://github.com/ueberdosis/tiptap)** | [![Stars](https://img.shields.io/github/stars/ueberdosis/tiptap?style=social&color=white)](https://github.com/ueberdosis/tiptap/stargazers) | Headless, framework-agnostic rich text editor framework powered by ProseMirror. Industry standard for building custom real-time collaborative word processors with Yjs. |
+| **[Yjs](https://github.com/yjs/yjs)** | [![Stars](https://img.shields.io/github/stars/yjs/yjs?style=social&color=white)](https://github.com/yjs/yjs/stargazers) | High-performance CRDT (Conflict-free Replicated Data Type) framework for real-time collaborative software, powering concurrent multi-user editing in document processors. |
+| **[Etherpad](https://github.com/ether/etherpad-lite)** | [![Stars](https://img.shields.io/github/stars/ether/etherpad-lite?style=social&color=white)](https://github.com/ether/etherpad-lite/stargazers) | Classic real-time collaborative text editor with live multi-user authoring, infinite undo/redo, time-slider version playback, and extensive plugin ecosystem. |
+| **[CryptPad](https://github.com/cryptpad/cryptpad)** | [![Stars](https://img.shields.io/github/stars/cryptpad/cryptpad?style=social&color=white)](https://github.com/cryptpad/cryptpad/stargazers) | End-to-end encrypted, zero-knowledge collaborative office suite. Offers real-time rich text documents, code pads, presentations, spreadsheets, and kanban boards. |
+| **[HedgeDoc](https://github.com/hedgedoc/hedgedoc)** | [![Stars](https://img.shields.io/github/stars/hedgedoc/hedgedoc?style=social&color=white)](https://github.com/hedgedoc/hedgedoc/stargazers) | Real-time collaborative Markdown editor (formerly CodiMD). Features live side-by-side preview, YAML metadata, MathJax formulas, and slide deck rendering. |
+| **[OnlyOffice Document Server](https://github.com/ONLYOFFICE/DocumentServer)** | [![Stars](https://img.shields.io/github/stars/ONLYOFFICE/DocumentServer?style=social&color=white)](https://github.com/ONLYOFFICE/DocumentServer/stargazers) | Production-ready self-hosted office suite engine. Delivers full MS Office compatibility (DOCX, XLSX, PPTX) with collaborative co-editing, track changes, and REST API integration. |
+| **[LibreOffice Core / Writer](https://github.com/LibreOffice/core)** | [![Stars](https://img.shields.io/github/stars/LibreOffice/core?style=social&color=white)](https://github.com/LibreOffice/core/stargazers) | Benchmark open-source word processor from The Document Foundation. Native ODF and high DOCX fidelity with full offline autonomy, zero telemetry, and extensive desktop capabilities. |
+| **[Collabora Online](https://github.com/CollaboraOnline/online)** | [![Stars](https://img.shields.io/github/stars/CollaboraOnline/online?style=social&color=white)](https://github.com/CollaboraOnline/online/stargazers) | Cloud-native collaborative office suite based on LibreOffice technology. Embeds directly into ownCloud, Nextcloud, and custom web applications for real-time multi-user document authoring. |
+| **[Nextcloud Office](https://github.com/nextcloud/richdocuments)** | [![Stars](https://img.shields.io/github/stars/nextcloud/richdocuments?style=social&color=white)](https://github.com/nextcloud/richdocuments/stargazers) | Official Nextcloud document integration app for Collabora Online / ONLYOFFICE, transforming Nextcloud private clouds into sovereign document collaboration platforms. |
+
+---
+
+## Key Features to Compare
+
+When evaluating collaborative word processors for your team or software stack, consider:
+
+1. **Concurrency Protocol**: CRDT (Conflict-free Replicated Data Type) vs. Operational Transformation (OT) vs. Server-authoritative locking.
+2. **Document Compatibility**: Native ODF, OpenXML / Microsoft DOCX fidelity, or block/JSON document trees (e.g. ProseMirror / Notion style).
+3. **Privacy & Data Residency**: On-premises self-hosting (Docker/Kubernetes), zero-knowledge E2EE (CryptPad), or multi-tenant public cloud.
+4. **Collaboration Tooling**: Real-time cursor presence, inline suggestion/review modes, @mentions, threaded comments, and audit logs.
+5. **Offline & Sync Capability**: Local-first synchronization when disconnected vs. browser-only web sockets.
+
+---
+
+## How to Contribute
+
+1. Fork this repository.
+2. Add your tool to the appropriate table (`SaaS/Hosted Platforms` or `Open-Source GitHub Projects`) keeping table sorting intact.
+3. Ensure all links, descriptions, pricing tiers, and star badges follow the existing format.
+4. Submit a pull request with a concise title and description.
+
+---
+
+## Disclaimer
+
+- This repository is a community-curated directory intended for research, architectural comparison, and informational purposes.
+- Free tier quotas, trials, and commercial pricing change frequently; please verify current details with original vendor documentation.
+- Self-hosting open-source servers requires appropriate network hardening, access control policies, and regular patch maintenance.
+
+---
+
+<sub>Maintained with ❤️ by the open-source community. Contributions and stars are welcome!</sub>
