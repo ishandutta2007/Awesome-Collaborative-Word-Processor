@@ -66,7 +66,7 @@ The industry exhibits a **highly concentrated, oligopolistic structure** at the 
 
 *Ranked in descending order of GitHub stargazers.* ⭐
 
-| Project | Star Badge | Description |
+| Project | Stars_Badge | Description |
 |:---|:---|:---|
 | **[AppFlowy](https://github.com/AppFlowy-IO/AppFlowy)** | [![Stars](https://img.shields.io/github/stars/AppFlowy-IO/AppFlowy?style=social&color=white)](https://github.com/AppFlowy-IO/AppFlowy/stargazers) | Open-source Flutter and Rust-based collaborative workspace and document editor. Privacy-first, local-first alternative to Notion with offline support and real-time syncing. 📱🦀 |
 | **[AFFiNE](https://github.com/toeverything/AFFiNE)** | [![Stars](https://img.shields.io/github/stars/toeverything/AFFiNE?style=social&color=white)](https://github.com/toeverything/AFFiNE/stargazers) | Next-generation all-in-one collaborative knowledge base combining editable documents, infinite whiteboard canvas, and multimodal blocks. Built on CRDTs with local-first architecture. 🎨🧱 |
@@ -100,7 +100,7 @@ When evaluating collaborative word processors for your team or software stack, c
 Contributions are very welcome! 🌟
 1. Fork this repository. 🍴
 2. Add your tool to the appropriate table (`SaaS/Hosted Platforms` or `Open-Source GitHub Projects`) keeping table sorting intact. ✍️
-3. Ensure all links, descriptions, pricing tiers, and star badges follow the existing format. 📐
+3. Ensure all links, descriptions, pricing tiers, and Stars_Badges follow the existing format. 📐
 4. Submit a pull request with a concise title and description. 🚀
 
 ---
@@ -133,5 +133,5 @@ Your support is deeply appreciated and helps keep the ecosystem directory compre
 ---
 
 <div align="center">
-<sub>Maintained with ❤️ by the open-source community. Contributions and stars are welcome!</sub>
+<sub>Maintained with ❤️ by the open-source community. Contributions and GitHub_Stars are welcome!</sub>
 </div>
