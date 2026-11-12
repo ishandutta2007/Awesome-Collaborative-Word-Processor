@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 440" width="100%" height="auto" style="background:#0a0d18; border-radius:12px; font-family:'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d18"/>
+      <stop offset="50%" stop-color="#12182b"/>
+      <stop offset="100%" stop-color="#0d1122"/>
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="cursorGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <linearGradient id="cursorGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#be123c"/>
+    </linearGradient>
+
+    <linearGradient id="cursorGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
+    </pattern>
+
+    <!-- Subtle Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    /* Animated Floating Elements */
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.35; }
+      50% { transform: scale(1.15) translate(15px, -10px); opacity: 0.65; }
+    }
+    @keyframes floatPill1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes floatPill2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(8px); }
+    }
+    @keyframes liveCursor {
+      0%, 100% { transform: translate(0px, 0px); }
+      25% { transform: translate(25px, -15px); }
+      50% { transform: translate(15px, 20px); }
+      75% { transform: translate(-10px, 10px); }
+    }
+    @keyframes blinkCaret {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.1; }
+    }
+
+    .orb-1 { animation: pulseOrb 8s ease-in-out infinite alternate; transform-origin: 200px 100px; }
+    .orb-2 { animation: pulseOrb 10s ease-in-out infinite alternate; transform-origin: 1050px 300px; }
+    .pill-anim-1 { animation: floatPill1 5s ease-in-out infinite; }
+    .pill-anim-2 { animation: floatPill2 6s ease-in-out infinite; }
+    .cursor-float-1 { animation: liveCursor 9s ease-in-out infinite; }
+    .cursor-float-2 { animation: liveCursor 11s ease-in-out infinite reverse; }
+    .typing-caret { animation: blinkCaret 1s steps(1) infinite; }
+  </style>
+
+  <!-- Deep Background Layer -->
+  <rect width="1280" height="440" fill="url(#bgGlow)"/>
+  <rect width="1280" height="440" fill="url(#grid)"/>
+
+  <!-- Dynamic Glowing Orbs in Background -->
+  <g>
+    <circle class="orb-1" cx="220" cy="120" r="140" fill="#38bdf8" filter="url(#glow)"/>
+    <circle class="orb-2" cx="1060" cy="320" r="160" fill="#818cf8" filter="url(#glow)"/>
+    <circle class="orb-1" cx="880" cy="90" r="90" fill="#c084fc" filter="url(#glow)"/>
+  </g>
+
+  <!-- Background Decorative Collaborator Cursors & Nodes -->
+  <g opacity="0.8">
+    <!-- Cursor 1 (Alice) -->
+    <g class="cursor-float-1" transform="translate(140, 290)">
+      <polygon points="0,0 6,18 10,13 16,21 19,19 13,11 19,9" fill="url(#cursorGradient1)"/>
+      <rect x="18" y="14" width="76" height="22" rx="5" fill="#0284c7" opacity="0.9"/>
+      <text x="25" y="29" fill="#ffffff" font-size="11" font-weight="600">Alice (Editing)</text>
+    </g>
+
+    <!-- Cursor 2 (Dev) -->
+    <g class="cursor-float-2" transform="translate(1020, 110)">
+      <polygon points="0,0 6,18 10,13 16,21 19,19 13,11 19,9" fill="url(#cursorGradient2)"/>
+      <rect x="18" y="14" width="88" height="22" rx="5" fill="#be123c" opacity="0.9"/>
+      <text x="25" y="29" fill="#ffffff" font-size="11" font-weight="600">Marcus (Review)</text>
+    </g>
+
+    <!-- Cursor 3 (Bot / CRDT) -->
+    <g class="cursor-float-1" transform="translate(1080, 240)">
+      <polygon points="0,0 6,18 10,13 16,21 19,19 13,11 19,9" fill="url(#cursorGradient3)"/>
+      <rect x="18" y="14" width="78" height="22" rx="5" fill="#047857" opacity="0.9"/>
+      <text x="25" y="29" fill="#ffffff" font-size="11" font-weight="600">CRDT Sync</text>
+    </g>
+  </g>
+
+  <!-- Central Foreground Content Container -->
+  <!-- Top Category Tag -->
+  <g transform="translate(640, 85)" text-anchor="middle">
+    <rect x="-165" y="-18" width="330" height="34" rx="17" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.2"/>
+    <text y="4" fill="#38bdf8" font-size="13" font-weight="700" letter-spacing="1.5">⚡ REAL-TIME CO-AUTHORING ECOSYSTEM</text>
+  </g>
+
+  <!-- Foreground Title -->
+  <text x="640" y="165" text-anchor="middle" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="-0.5">
+    Awesome Collaborative Word Processor
+  </text>
+
+  <!-- Gradient Subtitle Bar -->
+  <text x="640" y="215" text-anchor="middle" font-size="20" font-weight="600" fill="url(#accentGrad)" letter-spacing="0.2">
+    Enterprise SaaS Suites • Open-Source Engines • CRDT &amp; OT Frameworks
+  </text>
+
+  <!-- Foreground Tagline -->
+  <text x="640" y="255" text-anchor="middle" font-size="15" font-weight="400" fill="#94a3b8">
+    Curated directory for real-time document collaboration, offline-first sync, and self-hosted suites
+  </text>
+
+  <!-- Interactive / Foreground Feature Badges & Pills -->
+  <g transform="translate(640, 315)">
+    <!-- Pill 1: Real-time Multi-user -->
+    <g class="pill-anim-1" transform="translate(-390, 0)">
+      <rect x="0" y="0" width="165" height="36" rx="18" fill="rgba(255, 255, 255, 0.06)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
+      <circle cx="20" cy="18" r="5" fill="#38bdf8"/>
+      <text x="34" y="23" fill="#e2e8f0" font-size="12" font-weight="600">Multiplayer Editing</text>
+    </g>
+
+    <!-- Pill 2: CRDT & OT Sync -->
+    <g class="pill-anim-2" transform="translate(-205, 0)">
+      <rect x="0" y="0" width="175" height="36" rx="18" fill="rgba(255, 255, 255, 0.06)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
+      <circle cx="20" cy="18" r="5" fill="#818cf8"/>
+      <text x="34" y="23" fill="#e2e8f0" font-size="12" font-weight="600">CRDT / OT Engines</text>
+    </g>
+
+    <!-- Pill 3: Self-Hosted & Sovereign -->
+    <g class="pill-anim-1" transform="translate(-10, 0)">
+      <rect x="0" y="0" width="190" height="36" rx="18" fill="rgba(255, 255, 255, 0.06)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
+      <circle cx="20" cy="18" r="5" fill="#10b981"/>
+      <text x="34" y="23" fill="#e2e8f0" font-size="12" font-weight="600">Self-Hosted / Private</text>
+    </g>
+
+    <!-- Pill 4: Cloud SaaS Ecosystem -->
+    <g class="pill-anim-2" transform="translate(200, 0)">
+      <rect x="0" y="0" width="190" height="36" rx="18" fill="rgba(255, 255, 255, 0.06)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
+      <circle cx="20" cy="18" r="5" fill="#f59e0b"/>
+      <text x="34" y="23" fill="#e2e8f0" font-size="12" font-weight="600">Cloud Productivity Suites</text>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Line with Active Indicator -->
+  <line x1="160" y1="390" x2="1120" y2="390" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+  <line x1="560" y1="390" x2="720" y2="390" stroke="url(#accentGrad)" stroke-width="2"/>
+</svg>
